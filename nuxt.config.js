@@ -31,8 +31,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
 
       /* <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous"> */
-      { rel:'stylesheet' , href:'https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.23/af-2.3.5/b-1.6.5/b-colvis-1.6.5/b-flash-1.6.5/b-html5-1.6.5/b-print-1.6.5/cr-1.5.3/fc-3.3.2/fh-3.1.8/kt-2.6.0/r-2.2.7/rg-1.1.2/rr-1.2.7/sc-2.0.3/sb-1.0.1/sp-1.2.2/sl-1.3.1/datatables.min.css'},
-      { rel:'stylesheet' ,  href:"https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" , integrity:"sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" , crossorigin:"anonymous"},
+      // { rel:'stylesheet' , href:'https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.23/af-2.3.5/b-1.6.5/b-colvis-1.6.5/b-flash-1.6.5/b-html5-1.6.5/b-print-1.6.5/cr-1.5.3/fc-3.3.2/fh-3.1.8/kt-2.6.0/r-2.2.7/rg-1.1.2/rr-1.2.7/sc-2.0.3/sb-1.0.1/sp-1.2.2/sl-1.3.1/datatables.min.css'},
+      // { rel:'stylesheet' ,  href:"https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" , integrity:"sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" , crossorigin:"anonymous"},
      ],
     script:[
     /*
@@ -88,6 +88,7 @@ export default {
     '~/assets/editor.dataTables.min.css',
     '~/assets/bootstrap-rtl.min.css',
     '~/assets/datatables.min.css',
+    '~/assets/all.css',
 
   ],
 

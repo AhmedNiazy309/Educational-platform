@@ -84,6 +84,7 @@
             >
               دخول
             </a>
+            <p id="wrong" class="wrong d-none">Password is Wrong</p>
           </div>
         </div>
       </div>
@@ -133,10 +134,19 @@ export default {
               myglobalrouter.push("/home");
             }, 1000);
           }
+        // if (response.data.msg != "login sucssfully") {
+        //           // var element = document.getElementById("wrong");
+        //           //   element.classList.remove("d-none");
+        //           //   element.classList.add("d-block");
+        //     }
         })
         .catch(function(error) {
-          console.log(error);
-        });
+          // console.log(error);
+                  var element = document.getElementById("wrong");
+                    element.classList.remove("d-none");
+                    element.classList.add("d-block");
+
+});
     },
   },
 };
@@ -221,7 +231,7 @@ body{
   background-color: #fff;
   box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1);
   border-radius: 5px;
-  padding: 5rem;
+  padding: 2rem;
   width: 35rem;
   margin: auto;
 }
@@ -232,5 +242,10 @@ body{
 }
 .info{
   background-color: #fff !important;
+}
+.wrong{
+      padding-top: 1rem;
+    color: red;
+    font-weight: 700;
 }
 </style>
