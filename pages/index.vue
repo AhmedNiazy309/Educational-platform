@@ -63,6 +63,7 @@
             required
             v-model="form.user"
           />
+              <p class="text-center wrong">{{ validUserName }}</p>
         </div>
         <div class="form-group">
           <label for="password">كلمة السر</label>
@@ -74,6 +75,7 @@
             class="form-control user-login-input w-100"
             id="password"
           />
+        <p class="text-center wrong">{{ validPassword }}</p>
         </div>
         <div class="button">
           <div class="button-abs">
@@ -84,7 +86,7 @@
             >
               دخول
             </a>
-            <p id="wrong" class="wrong d-none">Password is Wrong</p>
+            <p id="wrong" class="wrong d-none">Password or username is Wrong</p>
           </div>
         </div>
       </div>
@@ -109,9 +111,27 @@ export default {
     form: {
       user: "",
       password: "",
-    }
+    },
+    em : '',
   }),
-
+      computed:{
+    validUserName: function () {
+      if (!this.form.user) {
+        return "User Name can't be Empty";
+      }
+      else {
+        return this.em;
+      }
+    },
+    validPassword: function () {
+      if (!this.form.password) {
+        return "Password can't be Empty";
+      }
+      else {
+        return this.em;
+      }
+    },
+      },
   methods: {
     postLogin() {
       var myglobalstore = this.$store;
