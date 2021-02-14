@@ -19,17 +19,21 @@
             </nuxt-link>
                     </li>
         <li>
-        <nuxt-link to="group">
+        <nuxt-link to="/group">
         <i class="fas fa-layer-group mr-1"></i> المجموعات
         </nuxt-link>
         </li>
         <li><i class="far fa-calendar-alt mr-1"></i> المواعيد</li>
         <li>
-        <nuxt-link to="question">
+        <nuxt-link to="/question">
         <i class="far fa-sticky-note mr-1"></i> الاختبارات
            </nuxt-link>
            </li>
-        <li><i class="fas fa-cog mr-1"></i> الاعدادات</li>
+        <li>
+        <nuxt-link to="pla/pla">
+        <i class="fas fa-cog mr-1"></i> الاعدادات
+        </nuxt-link>
+        </li>
         <li @click="logout" > <i class="fas fa-sign-out-alt"></i> خروج </li>
       </ul>
     </div>
@@ -766,7 +770,7 @@
             data-toggle="modal"
             data-target="#studentmenu"
           >
-            <img src="./images/group 1.svg">
+            <img src="../images/group 1.svg">
             <p>قائمة الطلاب</p>
           </div>
           <div
@@ -774,7 +778,7 @@
             data-toggle="modal"
             data-target="#attendancemenu"
           >
-          <img src="./images/Union.svg">
+          <img src="../images/Union.svg">
             <p>قائمة الحضور</p>
           </div>
           <div class="make-exam">
@@ -1178,7 +1182,7 @@ select {
   -moz-appearance: none;
   appearance: none;
   border: none !important;
-  background: url("./images/selectarrow.svg") #fd7b38 no-repeat 0 !important;
+  background: url("../images/selectarrow.svg") #fd7b38 no-repeat 0 !important;
   /* Better placement regardless of input width */
   background-color: #f8f8f8 !important;
   color: #242424;
@@ -1274,7 +1278,7 @@ header .admin-photo {
   left: 4rem;
   top: 0.5rem;
   border-radius: 50%;
-  background: url(./images/Ahmed.jpg);
+  background: url(../images/Ahmed.jpg);
   background-size: cover;
   /* main */
   z-index: 5;

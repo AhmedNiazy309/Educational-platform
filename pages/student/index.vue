@@ -10,24 +10,24 @@
     <div class="main-pages">
       <ul>
         <li>
-        <nuxt-link to="home">
+        <nuxt-link to="/home">
           <i class="fas fa-house-user mr-1"></i> الصفحة الرئيسية
         </nuxt-link>
         </li>
         <li class="active">
-        <nuxt-link to="student">
+        <nuxt-link to="/student">
            <i class="fas fa-users mr-1"></i> الطلاب
             </nuxt-link>
                     </li>
 
         <li>
-        <nuxt-link to="group">
+        <nuxt-link to="/group">
         <i class="fas fa-layer-group mr-1"></i> المجموعات
         </nuxt-link>
         </li>
         <li><i class="far fa-calendar-alt mr-1"></i> المواعيد</li>
         <li>
-        <nuxt-link to="question">
+        <nuxt-link to="/question">
         <i class="far fa-sticky-note mr-1"></i> الاختبارات
            </nuxt-link>
            </li>
@@ -1007,7 +1007,7 @@ select {
   -moz-appearance: none;
   appearance: none;
   border: none !important;
-  background: url("./images/selectarrow.svg") #fd7b38 no-repeat 0 !important;
+  background: url("../images/selectarrow.svg") #fd7b38 no-repeat 0 !important;
   /* Better placement regardless of input width */
   background-color: #f8f8f8 !important;
   color: #242424;
@@ -1100,7 +1100,7 @@ header .admin-photo {
   left: 4rem;
   top: 0.5rem;
   border-radius: 50%;
-  background: url(./images/Ahmed.jpg);
+  background: url(../images/Ahmed.jpg);
   background-size: cover;
   /* main */
   z-index: 5;

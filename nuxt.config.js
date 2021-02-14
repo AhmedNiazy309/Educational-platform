@@ -1,6 +1,6 @@
 import colors from "vuetify/es5/util/colors";
 import { resolve } from 'path'
-export default {
+export default  {
   ssr: false,
   /*
    ** Nuxt rendering mode
@@ -53,19 +53,18 @@ export default {
       // { src:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js" , integrity:"sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" , crossorigin:"anonymous"},
       // { src:"https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" , integrity:"sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" , crossorigin:"anonymous"},
       // { src:"https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js" , integrity:"sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK" , crossorigin:"anonymous"}
-      { src: 'jquery.js' },
-      { src: 'popper.js' },
-      { src: 'bootstrap.min.js' },
-      { src: 'dataTables.js' },
-      { src: 'jquery.dataTables.min.js' },
-      { src: 'dataTables.buttons.min.js' },
-      { src: 'buttons.flash.min.js' },
-      { src: 'jszip.min.js' },
-      { src: 'pdfmake.min.js' },
-      { src: 'vfs_fonts.js' },
-      { src: 'buttons.html5.min.js' },
-      { src: 'buttons.print.min.js' },
-      { src: 'buttons.colVis.min.js' },
+      { src: '/jquery.js' },
+      { src: '/popper.min.js' },
+      { src: '/bootstrap.min.js' },
+      { src: '/dataTables.js' },
+      { src: '/jquery.dataTables.min.js' },
+      { src: '/dataTables.buttons.min.js' },
+      { src: '/buttons.flash.min.js' },
+      { src: '/jszip.min.js' },
+      { src: '/pdfmake.min.js' },
+      { src: '/buttons.html5.min.js' },
+      { src: '/buttons.print.min.js' },
+      { src: '/buttons.colVis.min.js' },
 ]
   },
 
@@ -97,7 +96,21 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [],
+  plugins: [
+    // '~/plugins/jquery.js',
+    // '~/plugins/popper.min.js',
+    // '~/plugins/bootstrap.min.js',
+    // '~/plugins/dataTables.js',
+    // '~/plugins/jquery.dataTables.min.js',
+    // '~/plugins/dataTables.buttons.min.js',
+    // '~/plugins/buttons.flash.min.js',
+    // '~/plugins/jszip.min.js',
+    // '~/plugins/pdfmake.min.js',
+    // '~/plugins/vfs_fonts.js',
+    // '~/plugins/buttons.html5.min.js',
+    // '~/plugins/buttons.print.min.js',
+    // '~/plugins/buttons.colVis.min.js',
+],
   alias: {
     'style': resolve(__dirname, './assets/style')
   },
@@ -137,5 +150,5 @@ export default {
   build: {
     analyze: true,
     extractCSS: true,
-  }
+  },
 };
